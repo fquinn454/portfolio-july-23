@@ -7,8 +7,10 @@ Following [freeCodeCamp.org Tutorial ](https://www.freecodecamp.org/news/create-
 and improving JavaScript understanding to include<br>
 + classList.add()
 + classList.remove()
++ document.querySelector();
++ document.querySelectorAll();
 + element.forEach(() =>{<br>
   });
 + data.id
-+ document.querySelectorAll();
-+ document.querySelector();
+
+
