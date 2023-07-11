@@ -34,6 +34,4 @@ function pageTransitions(){
         
 }
 
-
-
 pageTransitions();
