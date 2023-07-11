@@ -10,3 +10,5 @@ and improving JavaScript understanding to include<br>
 + element.forEach(() =>{<br>
   });
 + data.id
++ document.querySelectorAll();
++ document.querySelector();
