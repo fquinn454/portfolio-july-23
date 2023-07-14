@@ -216,7 +216,7 @@ section {
             box-shadow: 1px 2px 15px rgba(0,0,0,0.1);
             &:hover{
                 cursor:default;
-                transform: translate(4px);
+                transform: translateY(-2px);
                 border: 1px solid var(--color-secondary);
                 box-shadow: 1px 2px 15px rgba(0,0,0,0.32);
             }
@@ -252,7 +252,7 @@ section {
         padding-right: 5rem;
         p{
             text-align: justify;
-            line-height: 2rem;
+            line-height: 1.6rem;
             padding: 1rem;
             color: var(--color-grey-1);
         }
@@ -314,6 +314,63 @@ section {
     }
 }
 
+.stat-title {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 3.5rem 0;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 40%;
+        height: 1px;
+        background-color: var(--color-grey-5);
+        transform: translateX(-50%);
+    }
+}
+
+/* Timeline */
+.timeline{
+    display: grid;
+    grid-template-columns: 1fr 0.45rem 1fr;
+    padding-bottom: 3rem;
+    .yellow{
+        background-color: var(--color-secondary);
+    }
+    .timeline-item{
+        position: relative;
+        padding: 0.5rem 3rem;
+        border-bottom: 1px solid var(--color-secondary);
+        .tl-duration{
+            padding: 0.2rem 0.6rem;
+            background-color: var(--color-grey-5);
+            border-radius: 15px;
+            display: inline-block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        h5{
+           padding: 1rem 0;
+           text-transform: uppercase; 
+           font-size: 1.3rem;
+           font-weight: 600;
+           span{
+            color: var(--color-grey-2);
+            font-weight: 500;
+            font-size: 1.2rem;
+           }
+        }
+        p{
+            color: var(--color-grey-2);
+        }
+    }
+
+}
+
 /* Independent Component */
 .btn-container{
     width:fit-content;
@@ -362,8 +419,8 @@ section {
 }
 
 .main-title {
-    text-align: center;
     h2 {
+        text-align: center;
         position: relative;
         text-transform: uppercase;
         font-size: 4rem;
@@ -382,4 +439,5 @@ section {
         }
     }
 }
+
 
