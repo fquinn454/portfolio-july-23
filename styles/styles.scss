@@ -332,17 +332,77 @@ section {
     }
 }
 
+
 /* Timeline */
 .timeline{
     display: grid;
     grid-template-columns: 1fr 0.45rem 1fr;
+    .dl1 {
+        grid-area: dl1;
+    }
+    .dr1{
+        grid-area: dr1;
+    }
+    .dl2 {
+        grid-area: dl2;
+    }
+    .dr2{
+        grid-area: dr2;
+    }
+    .dl3 {
+        grid-area: dl3;
+    }
+    .dr3{
+        grid-area: dr3;
+    }
+    .dl4 {
+        grid-area: dl4;
+    }
+    .dr4{
+        grid-area: dr4;
+    }
+    .l1 {
+        grid-area: l1;
+    }
+    .l2 {
+        grid-area: l2;
+    }
+    .l3 {
+        grid-area: l3;
+    }
+    .l4 {
+        grid-area: l4;
+    }
+    .l5 {
+        grid-area: l5;
+    }
+    .l6 {
+        grid-area: l6;
+    }
+    .l7 {
+        grid-area: l7;
+    }
+    .l8 {
+        grid-area: l8;
+    }
+    
+    grid-template-areas:
+        "dl1 l1 ."
+        ". l2 dr1"
+        "dl2 l3 ."
+        ". l4 dr2"
+        "dl3 l5 ."
+        ". l6 dr3"
+        "dl4 l7 ."
+        ". l8 dr4";
+
     padding-bottom: 3rem;
     .yellow{
         background-color: var(--color-secondary);
     }
     .timeline-item{
         position: relative;
-        padding: 0.5rem 3rem;
+        padding: 0.8rem 3rem;
         border-bottom: 1px solid var(--color-secondary);
         .tl-duration{
             padding: 0.2rem 0.6rem;
@@ -354,22 +414,23 @@ section {
             font-weight: 500;
         }
         h5{
-           padding: 1rem 0;
-           text-transform: uppercase; 
-           font-size: 1.3rem;
-           font-weight: 600;
-           span{
+        padding: 1rem 0;
+        text-transform: uppercase; 
+        font-size: 1.3rem;
+        font-weight: 600;
+        span{
             color: var(--color-grey-2);
             font-weight: 500;
             font-size: 1.2rem;
-           }
+        }
         }
         p{
             color: var(--color-grey-2);
         }
     }
-
 }
+
+
 
 /* Independent Component */
 .btn-container{

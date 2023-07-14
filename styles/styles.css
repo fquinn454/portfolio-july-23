@@ -336,14 +336,63 @@ section {
 .timeline {
   display: grid;
   grid-template-columns: 1fr 0.45rem 1fr;
+  grid-template-areas: "dl1 l1 ." ". l2 dr1" "dl2 l3 ." ". l4 dr2" "dl3 l5 ." ". l6 dr3" "dl4 l7 ." ". l8 dr4";
   padding-bottom: 3rem;
+}
+.timeline .dl1 {
+  grid-area: dl1;
+}
+.timeline .dr1 {
+  grid-area: dr1;
+}
+.timeline .dl2 {
+  grid-area: dl2;
+}
+.timeline .dr2 {
+  grid-area: dr2;
+}
+.timeline .dl3 {
+  grid-area: dl3;
+}
+.timeline .dr3 {
+  grid-area: dr3;
+}
+.timeline .dl4 {
+  grid-area: dl4;
+}
+.timeline .dr4 {
+  grid-area: dr4;
+}
+.timeline .l1 {
+  grid-area: l1;
+}
+.timeline .l2 {
+  grid-area: l2;
+}
+.timeline .l3 {
+  grid-area: l3;
+}
+.timeline .l4 {
+  grid-area: l4;
+}
+.timeline .l5 {
+  grid-area: l5;
+}
+.timeline .l6 {
+  grid-area: l6;
+}
+.timeline .l7 {
+  grid-area: l7;
+}
+.timeline .l8 {
+  grid-area: l8;
 }
 .timeline .yellow {
   background-color: var(--color-secondary);
 }
 .timeline .timeline-item {
   position: relative;
-  padding: 0.5rem 3rem;
+  padding: 0.8rem 3rem;
   border-bottom: 1px solid var(--color-secondary);
 }
 .timeline .timeline-item .tl-duration {
