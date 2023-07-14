@@ -50,7 +50,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 14rem;
+  padding: 3rem 12rem;
 }
 
 .section {
@@ -254,6 +254,7 @@ section {
   padding-right: 5rem;
 }
 .about-container .left-about p {
+  text-align: justify;
   line-height: 2rem;
   padding: 1rem;
   color: var(--color-grey-1);
@@ -299,13 +300,25 @@ section {
   left: 0;
   height: 100%;
   background-color: var(--color-secondary);
-  width: 90%;
+}
+.about-stats .progress-bars .progress-bar .progress-container .progress .html-css {
+  width: 60%;
+}
+.about-stats .progress-bars .progress-bar .progress-container .progress .javascript {
+  width: 58%;
+}
+.about-stats .progress-bars .progress-bar .progress-container .progress .web-design {
+  width: 42%;
+}
+.about-stats .progress-bars .progress-bar .progress-container .progress .web-development {
+  width: 93%;
 }
 
 /* Independent Component */
 .btn-container {
   width: -moz-fit-content;
   width: fit-content;
+  margin: 2rem auto;
 }
 
 .main-btn {

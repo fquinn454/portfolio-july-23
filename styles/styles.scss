@@ -50,7 +50,7 @@ section {
     position: absolute;
     left: 0;
     top: 0;
-    padding: 3rem 14rem;
+    padding: 3rem 12rem;
 }
 
 .section {
@@ -251,6 +251,7 @@ section {
     .left-about{
         padding-right: 5rem;
         p{
+            text-align: justify;
             line-height: 2rem;
             padding: 1rem;
             color: var(--color-grey-1);
@@ -293,8 +294,18 @@ section {
                         left: 0;
                         height: 100%;
                         background-color: var(--color-secondary);
-                        width: 90%;
-
+                    }
+                    .html-css{
+                        width: 60%;
+                    }
+                    .javascript{
+                        width: 58%;
+                    }
+                    .web-design{
+                        width: 42%;
+                    }
+                    .web-development{
+                        width: 93%;
                     }
                 }
             }
@@ -306,6 +317,7 @@ section {
 /* Independent Component */
 .btn-container{
     width:fit-content;
+    margin: 2rem auto;
 }
 
 .main-btn{
