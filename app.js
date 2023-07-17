@@ -30,8 +30,7 @@ function pageTransitions(){
             const element = document.getElementById(id);
             element.classList.add('active');
         }
-    })
-        
+    });
 }
 
 pageTransitions();

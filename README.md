@@ -2,8 +2,8 @@
 
 Following [freeCodeCamp.org Tutorial ](https://www.freecodecamp.org/news/create-a-portfolio-website-using-html-css-javascript/)<br> 
 **SCSS and CSS features**
-+ SCSS: Variables
 + SCSS: Nesting
++ CSS: Variables
 + CSS: clip-path
 + CSS: filter
 + CSS: transform
