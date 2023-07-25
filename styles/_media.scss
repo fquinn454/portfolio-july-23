@@ -1,4 +1,8 @@
 @media screen and (max-width: 450px){
+    section{
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
     .header-content{
         .right-header{
             .name{
@@ -9,10 +13,14 @@
 }
 
 @media screen and (max-width: 750px){
+    section{
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+
     header{
         .header-content{
             grid-template-columns: 1fr;
-            overflow: auto;
             .right-header{
                 grid-row: 1;
                 padding: 0.5rem 2rem;
@@ -38,11 +46,16 @@
         }
     }
 
+    .main-title{
+        display: grid;
+        grid-template-columns: 1fr;
+        h2{
+            font-size:3rem;
+        }
+    }
+
     .about-container{
         grid-template-columns: 1fr;
-        .right-about{
-            grid-template-columns: 1fr;
-        }
         .left-about {
             padding-right: 1rem;
             p{
@@ -74,8 +87,41 @@
         padding: 1.5rem 0;
     }
 
-    .section{
-        padding: 2rem 1rem;
+    .portfolios{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content-cont{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        .left-contact{
+            .contact-info{
+                .contact-item{
+                    p{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            .icon{
+                grid-template-columns: 25px 1fr;
+                font-size: 0.8rem;
+            }
+
+            .contact-icons{
+                position: static;
+                left: 0;
+            }
+        }
+        .right-contact{
+            margin-left: 0;
+            .input-control{
+                input, textarea{
+                    font-size: 0.8rem;
+                }
+                
+            }
+        }
     }
 
     .controls{
@@ -92,10 +138,104 @@
         }
         
     }
+
 }
 
-@media screen and (max-width: 900px){
+@media screen and (min-width: 750px) and (max-width: 1040px){
+    .contact-content-cont{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        .left-contact{
+            .contact-info{
+                .contact-item{
+                    p{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            .icon{
+                grid-template-columns: 25px 1fr;
+                font-size: 0.8rem;
+            }
+
+            .contact-icons{
+                position: static;
+                left: 0;
+            }
+        }
+        .right-contact{
+            margin-left: 0;
+            .input-control{
+                input, textarea{
+                    font-size: 0.8rem;
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1440px){
     .header-content .right-header {
         padding-right: 8rem;
     }
+
+    .about-container{
+        
+        .left-about {
+            padding-right: 1rem;
+            p{
+                text-align: left;
+            }
+        }
+    }
+
+    section{
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+
+    .timeline{
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+        "d1"
+        "d2"
+        "d3"
+        "d4"
+        "d5"
+        "d6"
+        "d7"
+        "d8";
+
+        .timeline-item{
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+        }
+        &:last-child{
+            margin-bottom:5rem;
+        }
+    }
+
+    .stat-title{
+        padding: 1.5rem 0;
+    }
+
+    .main-title{
+        padding-right: 3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .about-container{
+        grid-template-columns: 1fr;
+        .left-about {
+            padding-right: 1rem;
+            p{
+                text-align: left;
+            }
+        }
+    }
+
 }
